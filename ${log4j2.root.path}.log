@@ -1,0 +1,27 @@
+2018-03-12 15:08:17,572  INFO Application:48 - Starting Application on shishaohui-PC with PID 14492 (D:\ideawork\springboot-learning-example-master\practice-service\target\classes started by lenovo in D:\ideawork\springboot-learning-example-master\practice-service)
+2018-03-12 15:08:17,581  INFO Application:637 - No active profile set, falling back to default profiles: default
+2018-03-12 15:08:17,775  INFO AnnotationConfigEmbeddedWebApplicationContext:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d64e326: startup date [Mon Mar 12 15:08:17 CST 2018]; root of context hierarchy
+2018-03-12 15:08:18,632  INFO Version:30 - HV000001: Hibernate Validator 5.3.4.Final
+2018-03-12 15:08:20,472  INFO TomcatEmbeddedServletContainer:89 - Tomcat initialized with port(s): 8080 (http)
+2018-03-12 15:08:20,493  INFO StandardService:179 - Starting service Tomcat
+2018-03-12 15:08:20,496  INFO StandardEngine:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2018-03-12 15:08:20,723  INFO [/]:179 - Initializing Spring embedded WebApplicationContext
+2018-03-12 15:08:20,723  INFO ContextLoader:276 - Root WebApplicationContext: initialization completed in 2962 ms
+2018-03-12 15:08:21,031  INFO ServletRegistrationBean:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-12 15:08:21,037  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-12 15:08:21,038  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-12 15:08:21,038  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-12 15:08:21,038  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-12 15:08:21,493  INFO RequestMappingHandlerAdapter:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7d64e326: startup date [Mon Mar 12 15:08:17 CST 2018]; root of context hierarchy
+2018-03-12 15:08:21,602  INFO RequestMappingHandlerMapping:543 - Mapped "{[/person/get],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public com.ssh.service.practice.common.HttpResult com.ssh.service.practice.controller.PersonController.get()
+2018-03-12 15:08:21,609  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-12 15:08:21,609  INFO RequestMappingHandlerMapping:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-12 15:08:21,660  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 15:08:21,660  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 15:08:21,728  INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-12 15:08:22,032  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-03-12 15:08:22,067  INFO Http11NioProtocol:179 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-03-12 15:08:22,085  INFO Http11NioProtocol:179 - Starting ProtocolHandler [http-nio-8080]
+2018-03-12 15:08:22,137  INFO NioSelectorPool:179 - Using a shared selector for servlet write/read
+2018-03-12 15:08:22,184  INFO TomcatEmbeddedServletContainer:198 - Tomcat started on port(s): 8080 (http)
+2018-03-12 15:08:22,190  INFO Application:57 - Started Application in 5.285 seconds (JVM running for 7.453)
