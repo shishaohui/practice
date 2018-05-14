@@ -2,10 +2,11 @@ package com.ssh.service.practice.service;
 
 import com.ssh.service.practice.common.commonenums.CanWrite;
 import com.ssh.service.practice.domain.Message;
+import com.ssh.service.practice.util.DomainUtil;
 import com.ssh.service.practice.validation.New;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 import javax.persistence.EntityManager;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
@@ -24,6 +25,8 @@ public abstract class AbstractService<T> {
 	EntityManager entityManager;
 	@Autowired
 	Validator validator;
+	@Autowired
+	DomainUtil domainUtil;
 
 	protected final Class<T> targetClass;
 
@@ -59,10 +62,34 @@ public abstract class AbstractService<T> {
 		if(Objects.isNull(data)){
 			return null;
 		}
+		this.domainUtil.clear(data, right);
 		preAdd(data);
 		validate(data, New.class);
 		saveAndGet(data, this::postAdd);
 		return data;
+	}
+
+	@Transactional
+	public Collection<T> add(Collection<T> data){
+		return this.add(data, CanWrite.EXTERNAL);
+	}
+
+	@Transactional
+	public Collection<T> add(Collection<T> data,CanWrite... right){
+		if(Objects.nonNull(data) && data.size()>0){
+			data = data.stream().filter(Objects::nonNull).collect(Collectors.toList());
+			if(data.isEmpty()){
+				return new ArrayList<>();
+			}else {
+				List<T> result = new ArrayList<>();
+				for (T item : data) {
+					result.add(this.add(item, right));
+				}
+				return result;
+			}
+		}else {
+			return new ArrayList<>();
+		}
 	}
 
 	protected void validate(T data,Class... groups) {
