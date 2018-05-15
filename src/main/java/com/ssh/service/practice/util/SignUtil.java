@@ -39,8 +39,6 @@ public class SignUtil {
 		return null;
 	}
 
-	public static boolean initialized = false;
-
 	public static byte[] decrypt(byte[] content, byte[] keyByte, byte[] ivByte) throws InvalidAlgorithmParameterException {
 		try {
 			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS7Padding");
@@ -60,10 +58,8 @@ public class SignUtil {
 		} catch (BadPaddingException e) {
 			e.printStackTrace();
 		} catch (NoSuchProviderException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
