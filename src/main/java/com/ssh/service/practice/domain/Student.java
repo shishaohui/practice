@@ -5,6 +5,7 @@ import com.ssh.service.practice.enums.StudentStatus;
 import com.ssh.service.practice.validation.Key;
 import com.ssh.service.practice.validation.New;
 import com.ssh.service.practice.validation.TransParam;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import javax.persistence.*;
@@ -48,5 +49,7 @@ public class Student {
 	private LocalDateTime createTime;
 
 	private LocalDateTime LastTime;
+
+	private BigDecimal amount;
 
 }

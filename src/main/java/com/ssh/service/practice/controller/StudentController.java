@@ -37,7 +37,10 @@ public class StudentController {
 	@PostMapping(value = "/test")
 	public HttpResult<Student> test(@Validated(TransParam.class) @RequestBody Student student) throws SystemException {
 		studentService.test(student);
+
 		return HttpResult.OK(student);
 	}
+
+
 
 }

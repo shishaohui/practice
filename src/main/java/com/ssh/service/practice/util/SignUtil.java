@@ -31,15 +31,13 @@ public class SignUtil {
 				map.put("status", "0");
 				map.put("msg", "解密失败");
 			}
-		}catch (InvalidAlgorithmParameterException e) {
-			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
 
-	public static byte[] decrypt(byte[] content, byte[] keyByte, byte[] ivByte) throws InvalidAlgorithmParameterException {
+	public static byte[] decrypt(byte[] content, byte[] keyByte, byte[] ivByte) {
 		try {
 			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS7Padding");
 			Key sKeySpec = new SecretKeySpec(keyByte, "AES");
@@ -47,18 +45,6 @@ public class SignUtil {
 			cipher.init(Cipher.DECRYPT_MODE, sKeySpec, generateIV(ivByte));// 初始化
 			byte[] result = cipher.doFinal(content);
 			return result;
-		} catch (NoSuchAlgorithmException e) {
-			e.printStackTrace();
-		} catch (NoSuchPaddingException e) {
-			e.printStackTrace();
-		} catch (InvalidKeyException e) {
-			e.printStackTrace();
-		} catch (IllegalBlockSizeException e) {
-			e.printStackTrace();
-		} catch (BadPaddingException e) {
-			e.printStackTrace();
-		} catch (NoSuchProviderException e) {
-			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
