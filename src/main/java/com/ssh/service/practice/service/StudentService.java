@@ -10,6 +10,7 @@ import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
@@ -20,6 +21,8 @@ public class StudentService {
 	EntityManager entityManager;
 	@Autowired
 	StudentRepository repository;
+	@Autowired
+	PlatformTransactionManager transactionManager;
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -45,18 +48,5 @@ public class StudentService {
 		return repository.saveAndFlush(student);
 	}
 
-	/**
-	 * 测试service内部调用 事物生效
-	 * @param student
-	 */
-	public void test(Student student){
-		((StudentService) AopContext.currentProxy()).test2(student);
-	}
 
-	@Transactional
-	public void test2(Student student){
-		repository.saveAndFlush(student);
-		Assert.isTrue(student.getId()>0,"id不能为空且必须大于0");
-		throw new IllegalArgumentException("test");
-	}
 }
