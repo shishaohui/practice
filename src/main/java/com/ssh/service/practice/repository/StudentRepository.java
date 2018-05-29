@@ -6,7 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface StudentRepository extends JpaRepository<Student, Integer> {
 
 
-	//native sql 自动分页查询
+
+
+
+
+
+//native sql 自动分页查询
 /*
 	@Query(value = "select DISTINCT d.* from d2_surgery d , d2_surgery_detail e where d.enabled=true and d.tenant_id=:tenantId and d.id = e.surgery_id and e"
 		+ ".doctor_id=:doctorId and d.status =:status ORDER BY d.surgery_date \n#pageable\n",

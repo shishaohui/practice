@@ -8,6 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -33,9 +34,11 @@ public class StudentService {
 		return student;
 	}
 
+	@Cacheable(value = "studentCache",key = "#id")
 	public Student get(Integer id){
 		Assert.isTrue(id>0,"id不能为空且必须大于0");
-		Student student = repository.getOne(id);
+		Student student = repository.findOne(id);
+
 		Assert.isTrue(Objects.nonNull(student),"查询信息不存在");
 		entityManager.detach(student);
 		return student;
