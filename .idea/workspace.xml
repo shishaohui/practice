@@ -4,8 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/../../payment-service/src/main/java/com/digibig/service/payment/service/AlipayOrderService.java" description="List&lt;AlipayOrder&gt; orders = listWithTenantParent(te..." line="102" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62d2532b-6678-449b-a345-4dbac7f4f3c1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_1_spec_1_1_1.xml" afterPath="" />
+    <list default="true" id="62d2532b-6678-449b-a345-4dbac7f4f3c1" name="Default" comment="编码格式改为utf-8&#10;测试jpa缓存的应用">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
@@ -1062,7 +1061,7 @@
       <workItem from="1530673769705" duration="6972000" />
       <workItem from="1531202097892" duration="3752000" />
       <workItem from="1531273030650" duration="995000" />
-      <workItem from="1531301368250" duration="1155000" />
+      <workItem from="1531301368250" duration="1236000" />
     </task>
     <task id="LOCAL-00001" summary="AbstractService增加批量添加得方法&#10;添加SignUtil Base64加密解密相关">
       <created>1526281176620</created>
@@ -1103,7 +1102,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282330000" />
+    <option name="totallyTimeSpent" value="282411000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
