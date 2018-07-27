@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62d2532b-6678-449b-a345-4dbac7f4f3c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/SwitchTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1100,7 +1099,7 @@
       <workItem from="1532569569197" duration="1557000" />
       <workItem from="1532589571551" duration="664000" />
       <workItem from="1532592605758" duration="4942000" />
-      <workItem from="1532654759187" duration="9804000" />
+      <workItem from="1532654759187" duration="9990000" />
     </task>
     <task id="LOCAL-00001" summary="AbstractService增加批量添加得方法&#10;添加SignUtil Base64加密解密相关">
       <created>1526281176620</created>
@@ -1151,11 +1150,18 @@
       <option name="project" value="LOCAL" />
       <updated>1532672025725</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="代码更新">
+      <created>1532686522079</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1532686522079</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337724000" />
+    <option name="totallyTimeSpent" value="337910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
