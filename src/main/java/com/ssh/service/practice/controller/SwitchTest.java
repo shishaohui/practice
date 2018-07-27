@@ -13,6 +13,7 @@ public class SwitchTest {
 				break;
 			default:
 				System.out.println("default=="+a);
+
 		}
 	}
 }
