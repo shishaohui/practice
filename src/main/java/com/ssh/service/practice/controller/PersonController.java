@@ -18,6 +18,13 @@ public class PersonController {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
+
+	/**
+	 *
+	 * @param age
+	 * @param name
+	 * @return
+	 */
 	@GetMapping(value = "/get")
 	public HttpResult get(@RequestParam("age") Integer age,@RequestParam("name") String name) {
 		Assert.isTrue(!StringUtils.isEmpty(name),"name 不能为空!");
