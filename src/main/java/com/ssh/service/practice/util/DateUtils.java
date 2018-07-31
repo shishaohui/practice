@@ -12,9 +12,6 @@ import java.time.LocalTime;
 
 public class DateUtils {
 
-  private static final String DATE_MSG = "预约日期必须为当前日期之后";
-  private static final String TIME_MSG = "预约时间必须在当前日期时间之后";
-
   public static boolean sameDay(LocalDate d1, LocalDate d2) {
     return d1.compareTo(d2) == 0;
   }
