@@ -37,7 +37,7 @@ public abstract class AbstractValueConverter<T extends CommonEnum> extends BaseT
 
 	public T convertToEntityAttribute(Integer dbData) {
 		try {
-			return Objects.isNull(dbData) ? null : (T) methodFromString.invoke(null, dbData);
+			return Objects.isNull(dbData) ? null : (T) this.methodOfValue.invoke(null, dbData);
 		} catch (Exception e) {
 			this.logger.error("由DBValue转为目标对象异常", e);
 			return null;

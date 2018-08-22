@@ -33,4 +33,12 @@ public class StudentController {
 		return HttpResult.OK(studentService.update(student));
 	}
 
+
+	@PostMapping(value = "/test")
+	public HttpResult<Student> test(@RequestBody Student student) {
+		Student result = studentService.add(student);
+		Student testStudent = studentService.get(result.getId());
+		return HttpResult.OK(testStudent);
+	}
+
 }
