@@ -41,9 +41,9 @@ public class PdfGeneratorService {
 	private String tempPath;
 
 	@PostConstruct
-	private void init(){
+	private void init() {
 		File file = new File(tempPath);
-		if(!file.exists()){
+		if (!file.exists()) {
 			file.mkdirs();
 		}
 	}
@@ -61,7 +61,7 @@ public class PdfGeneratorService {
 		form.setGenerateAppearance(true);
 		for (Map.Entry<String, String> entry : params.entrySet()) {
 			PdfFormField field = form.getField(entry.getKey());
-			if(Objects.nonNull(field)){
+			if (Objects.nonNull(field)) {
 				field.setValue(entry.getValue(), font, 10f);
 			}
 		}
@@ -77,11 +77,12 @@ public class PdfGeneratorService {
 
 		ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 		PdfDocument pdfDoc = new PdfDocument(new PdfReader(template), new PdfWriter(outputStream));
+
 		PdfAcroForm form = PdfAcroForm.getAcroForm(pdfDoc, true);
 		form.setGenerateAppearance(true);
 		for (Map.Entry<String, String> entry : params.entrySet()) {
 			PdfFormField field = form.getField(entry.getKey());
-			if(Objects.nonNull(field)){
+			if (Objects.nonNull(field)) {
 				field.setValue(entry.getValue(), font, 10f);
 			}
 		}
@@ -94,8 +95,9 @@ public class PdfGeneratorService {
 		String filename = UUID.randomUUID().toString().concat(".pdf");
 		File tempFile = new File(tempPath, filename);
 		OutputStream outputStream = new FileOutputStream(tempFile);
-		outputStream.write(this.produce(template,params));
+		outputStream.write(this.produce(template, params));
 		outputStream.close();
+
 		return tempFile;
 	}
 }

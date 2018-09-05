@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.Banner.Mode;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
@@ -38,7 +39,7 @@ import org.springframework.web.multipart.MultipartFile;
  * @since JDK1.8
  */
 @RestController
-@RequestMapping(value = "/internal/v1.0/template", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+@RequestMapping(value = "/internal/v1.0/template")
 @Qualifier("internal")
 public class TemplateController {
 	@Autowired
@@ -50,8 +51,8 @@ public class TemplateController {
 	/**
 	 * 添加新模板
 	 */
-	@RequestMapping(value = "/add", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
-	public HttpResult<Template> addTemplate(@RequestParam(name = "file") MultipartFile file, @ModelAttribute Template template) throws IOException {
+	@RequestMapping(value = "/add", consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public HttpResult<Template> addTemplate(@RequestParam(name = "file") MultipartFile file, @ModelAttribute Template template,Mode mode) throws IOException {
 		InputStream inputStream = file.getInputStream();
 		GridFSFile gridFS = gridFsTemplate.store(inputStream, file.getOriginalFilename());
 		template.setBodyId(gridFS.getId().toString());
