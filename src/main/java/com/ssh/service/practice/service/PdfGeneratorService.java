@@ -21,20 +21,13 @@ import java.util.Objects;
 import java.util.UUID;
 import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.util.ResourceUtils;
 
 /**
- * <p>
- *
- * </p>
- *
- * @author zhangmingming<zhangmingming01 @ we.com>
- * @version v1.0
- * @datetime 2018/6/8
- * @since JDK1.8
+ * 基于itext7填充pdf模板
  */
-@Component
+@Service
 public class PdfGeneratorService {
 
 	@Value("${tempPath}")
@@ -48,28 +41,6 @@ public class PdfGeneratorService {
 		}
 	}
 
-	public File generate(InputStream template, Map<String, String> params) throws IOException {
-
-		File fontFile = ResourceUtils.getFile("classpath:font/simhei.ttf");
-		String filename = UUID.randomUUID().toString().concat(".pdf");
-		PdfFont font = PdfFontFactory.createFont(fontFile.getPath(), PdfEncodings.IDENTITY_H, false);
-
-		File tempFile = new File(tempPath, filename);
-		OutputStream outputStream = new FileOutputStream(tempFile);
-		PdfDocument pdfDoc = new PdfDocument(new PdfReader(template), new PdfWriter(outputStream));
-		PdfAcroForm form = PdfAcroForm.getAcroForm(pdfDoc, true);
-		form.setGenerateAppearance(true);
-		for (Map.Entry<String, String> entry : params.entrySet()) {
-			PdfFormField field = form.getField(entry.getKey());
-			if (Objects.nonNull(field)) {
-				field.setValue(entry.getValue(), font, 10f);
-			}
-		}
-		form.flattenFields();
-		pdfDoc.close();
-		return tempFile;
-	}
-
 	public byte[] produce(InputStream template, Map<String, String> params) throws IOException {
 
 		File fontFile = ResourceUtils.getFile("classpath:font/simhei.ttf");
@@ -81,12 +52,16 @@ public class PdfGeneratorService {
 		PdfAcroForm form = PdfAcroForm.getAcroForm(pdfDoc, true);
 		form.setGenerateAppearance(true);
 		for (Map.Entry<String, String> entry : params.entrySet()) {
+
 			PdfFormField field = form.getField(entry.getKey());
 			if (Objects.nonNull(field)) {
-				field.setValue(entry.getValue(), font, 10f);
+				//如果不设置左对齐 内容会在一行显示，过长的话不会自动换行
+				field.setValue(entry.getValue(), font, 10f).setJustification(PdfFormField.ALIGN_LEFT);
+//				field.setValue(entry.getValue(), font, 10f);
 			}
 		}
-		form.flattenFields();
+
+		form.flattenFields(); //设置表单域内容不可编译，否则生成的pdf文件 填充内容是可以修改的
 		pdfDoc.close();
 		return outputStream.toByteArray();
 	}
