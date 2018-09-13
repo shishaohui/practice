@@ -3,7 +3,11 @@ package com.ssh.service.practice.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.ssh.service.practice.common.commonenums.CommonEnum;
+import com.ssh.service.practice.jackson.*;
 import com.ssh.service.practice.util.ClassUtil;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Set;
 import org.slf4j.Logger;
@@ -29,6 +33,11 @@ public class JacksonConfig {
         SimpleModule module = new SimpleModule();
 
         module.addSerializer(CommonEnum.class, new CommonEnumSerializer());
+        module.addSerializer(LocalDateTime.class, new LocalDateTimeSerializer());
+        module.addSerializer(LocalDate.class, new LocalDateSerializer());
+        module.addDeserializer(LocalDate.class, new LocalDateDeserializer(conversionService));
+        module.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(conversionService));
+        module.addDeserializer(LocalTime.class, new LocalTimeDeserializer(conversionService));
         Set<Class<?>> all = ClassUtil.getClasses("com.ssh");
         Set<Class<? extends CommonEnum>> enums = ClassUtil.getByInterface(CommonEnum.class, all);
         enums.forEach(o->{

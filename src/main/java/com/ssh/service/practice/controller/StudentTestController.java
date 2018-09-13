@@ -28,4 +28,10 @@ public class StudentTestController {
 		Student student = service.get(id);
 		return HttpResult.OK(student);
 	}
+
+	@GetMapping(value = "/get/test")
+	public HttpResult<Student> getTest(@NotNull @RequestParam("id") Integer id) {
+		Student student = service.getTest(id);
+		return HttpResult.OK(student);
+	}
 }

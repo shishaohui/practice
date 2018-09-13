@@ -5,27 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62d2532b-6678-449b-a345-4dbac7f4f3c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractCrossFieldCondition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Condition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/CrossConditionHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldCondition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldConditionHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Names.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Query.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Update.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/enums/ConditionOperation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/font/simsun.ttf" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/service/AbstractService.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/util/DomainUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/util/DomainUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DateFormatParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DateFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalDateFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalDateTimeFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalTimeFormatter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateDeserializer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateSerializer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateTimeDeserializer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateTimeSerializer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalTimeDeserializer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/CommonEnumConverter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/CommonEnumDeserializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/CommonEnumSerializer.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/JacksonConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/JacksonConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/config/WebConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/domain/Student.class" afterPath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/domain/Student.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/practice-service.iml" afterPath="$PROJECT_DIR$/practice-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/DomainUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/DomainUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/AbstractService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/JacksonConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/JacksonConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/WebConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Student.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Student.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/CommonEnumConverter.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/CommonEnumConverter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/CommonEnumDeserializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/CommonEnumDeserializer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/CommonEnumSerializer.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/CommonEnumSerializer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,134 +60,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MethodProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QueryBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="853">
-              <caret line="122" column="9" lean-forward="true" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4628#4637#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentTestService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StudentTestService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentTestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+            <state relative-caret-position="92">
+              <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Update.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Update.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="81" column="1" lean-forward="false" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrossConditionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/CrossConditionHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="142" column="55" lean-forward="true" selection-start-line="142" selection-start-column="55" selection-end-line="142" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2984#2985#0" expanded="true" />
-                <element signature="e#3017#3018#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Names.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Names.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractCrossFieldCondition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractCrossFieldCondition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1084">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldConditionHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldConditionHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1536659458407" expanded="false" signature="9792:9798" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="9816:9820" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="9863:9869" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="9895:9899" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="9938:9944" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="9964:9968" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="9996:10002" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="10019:10023" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="10067:10073" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="10100:10104" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="10165:10171" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="10198:10202" ph=" }" />
-                <marker date="1536659458407" expanded="false" signature="10271:10277" ph=" { " />
-                <marker date="1536659458407" expanded="false" signature="10304:10308" ph=" }" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -225,6 +108,8 @@
       <find>tempPath</find>
       <find>domainUtil</find>
       <find>BadConditionException</find>
+      <find>.select</find>
+      <find>CommonEnumSerializer</find>
     </findStrings>
     <replaceStrings>
       <replace>1000</replace>
@@ -244,29 +129,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Query.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractService.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/JacksonConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/SignUtil.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/AliResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/ForEachTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/IpUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/BigDecimalTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/SwitchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/CheckUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/DateUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/ClassUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/AbstractValueConverter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/TryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/TestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/IpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/ArraysTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/ParamTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/view/staticTest.java" />
@@ -296,11 +168,26 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Names.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Update.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/CrossConditionHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldConditionHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalDateTimeFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/JodaLocalTimeFormatter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/DigibigEnumDeserializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/LocalDateTimeSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DateFormatParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/LocalDateSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/JacksonConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/Formatters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/CommonEnumSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateTimeSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/CommonEnumConverter.java" />
       </list>
     </option>
   </component>
@@ -351,7 +238,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -828,7 +715,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -869,7 +755,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
@@ -878,25 +764,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="digibig" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
+              <item name="converter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
@@ -907,36 +775,13 @@
               <item name="practice" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="practice" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="practice-service" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practice-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -957,18 +802,18 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ssh.service.practice.config" />
       <recent name="com.ssh.service.practice.controller" />
       <recent name="com.ssh.service.practice.service" />
       <recent name="com.ssh.service.practice.enums" />
       <recent name="com.ssh.service.practice.domain" />
-      <recent name="com.ssh.service.practice.common.commonenums" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideawork\springboot-learning-example-master\practice-service\src\main\java\com\ssh\service\practice" />
       <recent name="D:\ideawork\springboot-learning-example-master\practice-service\src\main\resources\font" />
       <recent name="D:\ideawork\springboot-learning-example-master\practice-service\temp" />
       <recent name="D:\ideawork\springboot-learning-example-master\practice-service\src\main\java\com\ssh\service\practice\controller" />
       <recent name="D:\ideawork\springboot-learning-example-master\practice-service\src\main\java\com\ssh\service\practice\service" />
-      <recent name="D:\ideawork\springboot-learning-example-master\practice-service\src\main\java\com\ssh\service\practice\view" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1275,7 +1120,9 @@
       <workItem from="1536197492531" duration="22175000" />
       <workItem from="1536283563441" duration="4729000" />
       <workItem from="1536543047981" duration="642000" />
-      <workItem from="1536626107972" duration="13962000" />
+      <workItem from="1536626107972" duration="15451000" />
+      <workItem from="1536715874841" duration="10921000" />
+      <workItem from="1536799571397" duration="11759000" />
     </task>
     <task id="LOCAL-00001" summary="AbstractService增加批量添加得方法&#10;添加SignUtil Base64加密解密相关">
       <created>1526281176620</created>
@@ -1389,11 +1236,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536220984111</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="针对spring-extension的学习">
+      <created>1536660602061</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1536660602061</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454682000" />
+    <option name="totallyTimeSpent" value="478851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1405,8 +1259,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1416,13 +1269,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21748401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31620112" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2055866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17217484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1988273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1430,8 +1283,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32513967" sideWeight="0.4968017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31843576" sideWeight="0.4968017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1483,17 +1336,12 @@
     <MESSAGE value="新增添加模板，下载模板，打印pdf文件功能" />
     <MESSAGE value="com.itextpdf.kernel.pdf&#10;com.itextpdf.text.pdf&#10;两种读写pdf文件的方式，kernel内容超长不换行" />
     <MESSAGE value="itext7填充模板实现换行 加左对齐即可" />
-    <option name="LAST_COMMIT_MESSAGE" value="itext7填充模板实现换行 加左对齐即可" />
+    <MESSAGE value="针对spring-extension的学习" />
+    <option name="LAST_COMMIT_MESSAGE" value="针对spring-extension的学习" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/TemplateController.java</url>
           <line>55</line>
@@ -1530,11 +1378,35 @@
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Query.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Query.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldConditionHelper.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="118" />
+      <option name="time" value="126" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1543,439 +1415,429 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/PdfReader.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE-sources.jar!/org/springframework/util/CollectionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="248" column="32" lean-forward="false" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/PdfStamper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfDocument.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/PRTokeniser.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="115" column="13" lean-forward="true" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/font/PdfFont.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfString.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfObject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/forms/7.0.4/forms-7.0.4-sources.jar!/com/itextpdf/forms/PdfAcroForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfName.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="510" column="32" lean-forward="false" selection-start-line="510" selection-start-column="32" selection-end-line="510" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfDictionary.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/AcroFields.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/TextField.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.4.3/itextpdf-5.4.3.jar!/com/itextpdf/text/pdf/BaseFont.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/kernel/7.0.4/kernel-7.0.4.jar!/com/itextpdf/kernel/pdf/PdfNumber.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/PrintController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/TemplateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1617">
-          <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="45" selection-end-line="55" selection-end-column="45" />
+        <state relative-caret-position="322">
+          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1526#1527#0" expanded="false" />
+            <element signature="e#1584#1585#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/font/simhei.ttf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/font/simsun.ttf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/PDFService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.7.RELEASE/spring-context-4.3.7.RELEASE-sources.jar!/org/springframework/validation/beanvalidation/CustomValidatorBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/Validator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/PdfGeneratorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/TemplateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/forms/7.0.4/forms-7.0.4-sources.jar!/com/itextpdf/forms/fields/PdfFormField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1083" column="9" lean-forward="false" selection-start-line="1083" selection-start-column="9" selection-end-line="1083" selection-end-column="9" />
-          <folding>
-            <element signature="e#12920#12921#0" expanded="false" />
-            <element signature="e#12968#12969#0" expanded="false" />
-            <element signature="e#58643#58644#0" expanded="false" />
-            <element signature="e#58691#58692#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="31" column="11" lean-forward="false" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/BiFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/util/DomainUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="289" column="0" lean-forward="false" selection-start-line="289" selection-start-column="0" selection-end-line="289" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="666" column="0" lean-forward="false" selection-start-line="666" selection-start-column="0" selection-end-line="666" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="751">
+          <caret line="128" column="72" lean-forward="false" selection-start-line="128" selection-start-column="72" selection-end-line="128" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
+            <element signature="e#2520#2521#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/enums/ElectiveCourseStatus.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/criteria/Root.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="79" selection-end-column="5" />
+        <state relative-caret-position="374">
+          <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/enums/ConditionOperation.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/TypedQuery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        <state relative-caret-position="289">
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldCondition.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar!/javax/persistence/EntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="52" lean-forward="false" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="165" column="17" lean-forward="false" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractCrossFieldCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1084">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Names.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/Update.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="81" column="1" lean-forward="false" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="853">
-          <caret line="122" column="9" lean-forward="true" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4628#4637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/CrossConditionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="12" column="10" lean-forward="false" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/FieldConditionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1536659458407" expanded="false" signature="9792:9798" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="9816:9820" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="9863:9869" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="9895:9899" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="9938:9944" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="9964:9968" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="9996:10002" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="10019:10023" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="10067:10073" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="10100:10104" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="10165:10171" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="10198:10202" ph=" }" />
-            <marker date="1536659458407" expanded="false" signature="10271:10277" ph=" { " />
-            <marker date="1536659458407" expanded="false" signature="10304:10308" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="289">
+          <caret line="552" column="21" lean-forward="false" selection-start-line="552" selection-start-column="21" selection-end-line="552" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/AbstractService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="142" column="55" lean-forward="true" selection-start-line="142" selection-start-column="55" selection-end-line="142" selection-end-column="55" />
+        <state relative-caret-position="281">
+          <caret line="111" column="13" lean-forward="false" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2984#2985#0" expanded="true" />
             <element signature="e#3017#3018#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="31" column="36" lean-forward="true" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="664" column="0" lean-forward="false" selection-start-line="664" selection-start-column="0" selection-end-line="664" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/QueryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="44" column="25" lean-forward="false" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="210" column="12" lean-forward="false" selection-start-line="210" selection-start-column="12" selection-end-line="210" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/AbstractCodeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1490">
+          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/AbstractIdConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/AbstractValueConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/CanWrite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1193">
+          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/common/commonenums/CommonEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2447">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/ApiLogAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/ExceptionHandlerAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/enums/UpExaminationStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/digibig/enums/ConditionOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/com/fasterxml/jackson/databind/DeserializationFeature.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/JodaLocalDateFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/JodaLocalDateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DateFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DigiEnumConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalDateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/JodaLocalTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/DigibigEnumSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/PageSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/DigibigEnumDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/DateFormatParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2334">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateTimeDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalTimeDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.8.7/jackson-core-2.8.7.jar!/com/fasterxml/jackson/core/JsonToken.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/LocalDateFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/com/fasterxml/jackson/databind/deser/SettableBeanProperty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/com/fasterxml/jackson/databind/deser/impl/MethodProperty.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.8.7/jackson-databind-2.8.7.jar!/com/fasterxml/jackson/databind/module/SimpleModule.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="45" column="55" lean-forward="false" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/Formatters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/JacksonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/CommonEnumDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/CommonEnumSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/jackson/LocalDateTimeSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/converter/CommonEnumConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/StudentTestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

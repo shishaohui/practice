@@ -46,10 +46,10 @@ public class Student {
 
 	private LocalDate startDate;
 
+	private BigDecimal amount;
+
 	private LocalDateTime createTime;
 
 	private LocalDateTime LastTime;
-
-	private BigDecimal amount;
 
 }

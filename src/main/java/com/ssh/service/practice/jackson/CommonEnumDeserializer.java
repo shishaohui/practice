@@ -1,4 +1,4 @@
-package com.ssh.service.practice.config;
+package com.ssh.service.practice.jackson;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;

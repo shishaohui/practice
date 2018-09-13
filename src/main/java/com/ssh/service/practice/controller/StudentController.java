@@ -40,5 +40,4 @@ public class StudentController {
 		Student testStudent = studentService.get(result.getId());
 		return HttpResult.OK(testStudent);
 	}
-
 }

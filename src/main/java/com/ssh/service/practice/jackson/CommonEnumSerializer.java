@@ -1,4 +1,4 @@
-package com.ssh.service.practice.config;
+package com.ssh.service.practice.jackson;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

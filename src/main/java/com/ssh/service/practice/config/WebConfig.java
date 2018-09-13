@@ -11,6 +11,7 @@ package com.ssh.service.practice.config;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.ssh.service.practice.converter.*;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
@@ -42,7 +43,12 @@ public class WebConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addFormatters(FormatterRegistry registry) {
+		DateFormatParser parser=new DateFormatParser();
 		registry.addConverter(new CommonEnumConverter());
+		registry.addFormatter(new DateFormatter(parser));
+		registry.addFormatter(new LocalDateFormatter(parser));
+		registry.addFormatter(new LocalDateTimeFormatter(parser));
+		registry.addFormatter(new LocalTimeFormatter(parser));
 	}
 
 
