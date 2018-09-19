@@ -23,6 +23,16 @@ import org.hibernate.validator.constraints.NotBlank;
 @Data
 public class Student {
 
+	public Student() {
+	}
+
+	public Student(String name, Integer age, Integer tuition, StudentStatus status) {
+		this.name = name;
+		this.age = age;
+		this.tuition = tuition;
+		this.status = status;
+	}
+
 	@Id
 	@GeneratedValue
 	private Integer id;
@@ -48,8 +58,13 @@ public class Student {
 
 	private BigDecimal amount;
 
+	private Boolean enabled;
+
+	private Integer enabledId;
+
 	private LocalDateTime createTime;
 
 	private LocalDateTime LastTime;
+
 
 }

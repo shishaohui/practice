@@ -5,7 +5,10 @@ import com.ssh.service.practice.domain.Student;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
-import javax.persistence.criteria.*;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 @Service
-public class StudentTestService extends AbstractService<Student> {
+public class StudentDigibigService extends AbstractService<Student> {
 
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -21,7 +24,7 @@ public class StudentTestService extends AbstractService<Student> {
 	EntityManager entityManager;
 
 	@Autowired
-	public StudentTestService() {
+	public StudentDigibigService() {
 		super(Student.class);
 	}
 
