@@ -71,4 +71,10 @@ public class TemplateController {
 		headers.setContentType(MediaType.APPLICATION_PDF);
 		return new ResponseEntity<>(StreamUtils.copyToByteArray(gridFS.getInputStream()), headers, HttpStatus.CREATED);
 	}
+
+	@GetMapping(value = "/delete")
+	public HttpResult<String> delete(@RequestParam Integer id) {
+		service.delete(id);
+		return HttpResult.OK("success");
+	}
 }

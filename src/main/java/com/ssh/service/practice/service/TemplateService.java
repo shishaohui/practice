@@ -11,6 +11,9 @@ import com.ssh.service.practice.domain.Template;
 import com.ssh.service.practice.repository.TemplateRepository;
 import java.util.Objects;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import org.springframework.validation.annotation.Validated;
@@ -31,6 +34,8 @@ public class TemplateService {
 
 	@Autowired
 	TemplateRepository repository;
+	@Autowired
+	GridFsTemplate fsTemplate;
 
 	public Template get(Integer id){
 		return repository.getOne(id);
@@ -39,5 +44,16 @@ public class TemplateService {
 	public Template add(Template data) {
 		Assert.isTrue(Objects.nonNull(data),"带保存对象不能为空!");
 		return repository.saveAndFlush(data);
+	}
+
+	public void delete(Integer id) {
+		Template template = repository.getOne(id);
+		this.deleteMongo(template);
+		repository.delete(id);
+	}
+	private void deleteMongo(Template data) {
+		Query query = new Query();
+		query.addCriteria(Criteria.where("_id").is(data.getBodyId()));
+		fsTemplate.delete(query);
 	}
 }
