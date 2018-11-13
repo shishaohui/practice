@@ -7,15 +7,6 @@
     <list default="true" id="62d2532b-6678-449b-a345-4dbac7f4f3c1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/Application.class" afterPath="$PROJECT_DIR$/target/classes/com/ssh/service/practice/Application.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/AsyncTaskExecutePool.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/config/AsyncTaskExecutePool.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/ThreadTestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/controller/ThreadTestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/SiteConsultDailyStats.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/domain/SiteConsultDailyStats.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/AsyncExecutor.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/AsyncExecutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/AsyncTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/AsyncTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/JsonNodeTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/service/JsonNodeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/view/Base1.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/view/Base1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/view/ManualThreadTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/ssh/service/practice/view/ManualThreadTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1098,7 +1089,7 @@
       <workItem from="1540465528911" duration="106000" />
       <workItem from="1541777141109" duration="855000" />
       <workItem from="1541936109428" duration="971000" />
-      <workItem from="1542073399708" duration="303000" />
+      <workItem from="1542073399708" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="AbstractService增加批量添加得方法&#10;添加SignUtil Base64加密解密相关">
       <created>1526281176620</created>
@@ -1247,11 +1238,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537841108272</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="代码更新">
+      <created>1542073727653</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1542073727656</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="588708000" />
+    <option name="totallyTimeSpent" value="588748000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1336,7 +1334,6 @@
     <MESSAGE value="Lambda表达式中BigDecimal的求和" />
     <MESSAGE value="新增TestController 测试aop暴露代理对象 和手动启动事务 两种实现service内部调用事务管理" />
     <MESSAGE value="编码格式改为utf-8&#10;测试jpa缓存的应用" />
-    <MESSAGE value="代码更新" />
     <MESSAGE value="新增添加模板，下载模板，打印pdf文件功能" />
     <MESSAGE value="com.itextpdf.kernel.pdf&#10;com.itextpdf.text.pdf&#10;两种读写pdf文件的方式，kernel内容超长不换行" />
     <MESSAGE value="itext7填充模板实现换行 加左对齐即可" />
@@ -1345,7 +1342,8 @@
     <MESSAGE value="增加抽象service&#10;增加事务提交后执行方法" />
     <MESSAGE value="增加ManualThreadTest 手动开启新事物test" />
     <MESSAGE value="增加multiPartConfig配置文件 设置文件上传大小" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加multiPartConfig配置文件 设置文件上传大小" />
+    <MESSAGE value="代码更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1654,6 +1652,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1671,6 +1672,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
