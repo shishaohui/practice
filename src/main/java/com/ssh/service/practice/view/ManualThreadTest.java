@@ -10,6 +10,8 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
+import org.springframework.transaction.support.TransactionSynchronizationAdapter;
+import org.springframework.transaction.support.TransactionSynchronizationManager;
 
 /**
  * 手动开启一个新事物
@@ -28,6 +30,7 @@ public class ManualThreadTest {
 			DefaultTransactionDefinition transaction = new DefaultTransactionDefinition();
 			transaction.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRES_NEW);
 			status = transactionManager.getTransaction(transaction);
+			Thread.sleep(5000L);
 			System.out.println("service内部事务,等待5秒");
 		} catch (Exception e) {
 			if (Objects.nonNull(status)) {
@@ -35,6 +38,13 @@ public class ManualThreadTest {
 			}
 			throw new BusinessException("异常", e);
 		}
+		TransactionSynchronizationManager.registerSynchronization(new TransactionSynchronizationAdapter() {
+			@Override
+			public void afterCommit() {
+				Thread thread = Thread.currentThread();
+				System.out.println("transfer after transaction commit...");
+			}
+		});
 
 		this.commit(status);
 	}

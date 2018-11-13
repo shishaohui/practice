@@ -1,6 +1,7 @@
 package com.ssh.service.practice.controller;
 
 import com.ssh.service.practice.common.HttpResult;
+import com.ssh.service.practice.service.AsyncTest;
 import com.ssh.service.practice.view.ManualThreadTest;
 import com.ssh.service.practice.view.ThreadTest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,9 @@ public class ThreadTestController {
 	@Autowired
 	ManualThreadTest manualThreadTest;
 
+	@Autowired
+	AsyncTest asyncTest;
+
 	@Transactional
 	@GetMapping(value = "/after/commit")
 	public HttpResult<Void> afterCommit() {
@@ -31,7 +35,14 @@ public class ThreadTestController {
 	@GetMapping(value = "/manual/transaction")
 	public HttpResult<Void> manualTransaction() {
 		manualThreadTest.test();
-		System.out.println("controller外部事务");
 		return new HttpResult<>(200, "ok");
 	}
+
+	@GetMapping(value = "/async")
+	public HttpResult<Void> asyncTest() {
+		asyncTest.host();
+		return new HttpResult<>(200, "ok");
+	}
+
+
 }
