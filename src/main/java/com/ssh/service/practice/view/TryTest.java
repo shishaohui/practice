@@ -1,45 +1,23 @@
 package com.ssh.service.practice.view;
 
+import org.apache.commons.lang.math.RandomUtils;
+
 public class TryTest {
-	public static void main(String[] args){
-		TryTest tryTest = new TryTest();
-//		int a = tryTest.test();
-		int a = tryTest.getValue(2);
-		System.out.println("a==="+a);
-/*		double d = 29.0 * 0.01;
-		System.out.println(d);
-		System.out.println(d * 100);
-		System.out.println((int) (d * 100));*/
-	}
 
-	private Integer test(){
-		try{
-			int a = 10/0;
-			System.out.println("try");
-			return 1;
-		}catch(Exception e){
-			System.out.println("catch");
-			return 2;
-		}finally{
-			System.out.println("finally");
-//			return 3;
-		}
-	}
+	public static void main(String[] args) {
+		double v = Math.random();
+		System.out.println("math.random" + v);
+		int a = (int) (v * 100);
+		System.out.println("a======" + a);
 
-	private Integer getValue(int i) {
-		int result = 0;
-		switch (i) {
-			case 1:
-				result = result + i;
-			case 2:
-				result = result + i*2;
-			case 3:
-				result = result + i*3;
-				break;
-			case 4:
-				result = result + i*4;
-			default:
+		//RandomUtils.nextInt(5)  0到5  包含0 不包含5
+		for (int i = 0; i < 100; i++) {
+			Integer c = RandomUtils.nextInt(5);
+			if(c==0){
+				System.out.println("RandomUtils c 包含0======= c = "+c);
+			} else if (c == 5) {
+				System.out.println("RandomUtils c 包含5=======0" + c);
+			}
 		}
-		return result;
 	}
 }
