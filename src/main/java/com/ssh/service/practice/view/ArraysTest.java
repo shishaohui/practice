@@ -1,17 +1,19 @@
 package com.ssh.service.practice.view;
 
 public class ArraysTest {
-	
-	public static void main(String[] args) {
-		int[] a1 = {1, 2, 3, 4, 5};
-		int[] a2;
-		a2 = a1;
-		for (int i = 0;i< a2.length; i++){
-			a2[i]++;
-		}
+	//姓名
+	private String name;
 
-		for (int i = 0;i< a2.length; i++) {
-		    System.out.println("a1="+a1[i]);
-		}
+	public static void main(String[] args) {
+		Integer a = 10;
+		Integer b = 20;
+		System.out.println("aaaaa===="+a.compareTo(b));
+
+		String str1;
+
+	}
+
+	private void test(){
+		String str;
 	}
 }
