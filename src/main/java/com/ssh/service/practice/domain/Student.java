@@ -5,16 +5,17 @@ import com.ssh.service.practice.enums.StudentStatus;
 import com.ssh.service.practice.validation.Key;
 import com.ssh.service.practice.validation.New;
 import com.ssh.service.practice.validation.TransParam;
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import javax.persistence.*;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.validator.constraints.NotBlank;
+
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "b9_student")
@@ -66,5 +67,99 @@ public class Student {
 
 	private LocalDateTime LastTime;
 
+	public Integer getId() {
+		return id;
+	}
 
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+
+	public Integer getTuition() {
+		return tuition;
+	}
+
+	public void setTuition(Integer tuition) {
+		this.tuition = tuition;
+	}
+
+	public StudentStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(StudentStatus status) {
+		this.status = status;
+	}
+
+	public Sex getSex() {
+		return sex;
+	}
+
+	public void setSex(Sex sex) {
+		this.sex = sex;
+	}
+
+	public LocalDate getStartDate() {
+		return startDate;
+	}
+
+	public void setStartDate(LocalDate startDate) {
+		this.startDate = startDate;
+	}
+
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+
+	public Boolean getEnabled() {
+		return enabled;
+	}
+
+	public void setEnabled(Boolean enabled) {
+		this.enabled = enabled;
+	}
+
+	public Integer getEnabledId() {
+		return enabledId;
+	}
+
+	public void setEnabledId(Integer enabledId) {
+		this.enabledId = enabledId;
+	}
+
+	public LocalDateTime getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(LocalDateTime createTime) {
+		this.createTime = createTime;
+	}
+
+	public LocalDateTime getLastTime() {
+		return LastTime;
+	}
+
+	public void setLastTime(LocalDateTime lastTime) {
+		LastTime = lastTime;
+	}
 }
