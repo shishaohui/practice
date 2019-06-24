@@ -29,8 +29,15 @@ public class StudentTestController {
 		return HttpResult.OK(service.add(student));
 	}
 
+	@PostMapping(value = "/add")
+	public Student add(@RequestParam String name) {
+		Student student = new Student();
+		student.setName(name);
+		return service.add(student);
+	}
+
 	@GetMapping(value = "/get")
-	public HttpResult<Student> get(@NotNull @RequestParam("id") Integer id) {
+	public HttpResult<Student> get(@NotNull @RequestParam Integer id) {
 		Student student = service.get(id);
 		return HttpResult.OK(student);
 	}

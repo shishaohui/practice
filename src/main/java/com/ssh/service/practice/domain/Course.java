@@ -4,10 +4,7 @@ import com.ssh.service.practice.validation.Key;
 import com.ssh.service.practice.validation.New;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.Min;
 import lombok.Data;
 import org.hibernate.annotations.DynamicInsert;
@@ -22,7 +19,7 @@ import org.hibernate.validator.constraints.NotBlank;
 public class Course {
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	@NotBlank(groups = {New.class},message = "选修课名称不能为空")
