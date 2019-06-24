@@ -35,7 +35,7 @@ public class Student {
 	}
 
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	@NotBlank(groups = {TransParam.class, New.class},message = "姓名不能为空!")
