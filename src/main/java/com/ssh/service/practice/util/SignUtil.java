@@ -1,17 +1,18 @@
 package com.ssh.service.practice.util;
 
-import static org.apache.tomcat.util.codec.binary.Base64.decodeBase64;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
-import java.io.UnsupportedEncodingException;
-import java.security.*;
-import java.util.HashMap;
-import java.util.Map;
-import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
-import javax.crypto.IllegalBlockSizeException;
-import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
+import java.security.AlgorithmParameters;
+import java.security.Key;
+import java.security.Security;
+import java.util.HashMap;
+import java.util.Map;
+
+import static org.apache.tomcat.util.codec.binary.Base64.decodeBase64;
 
 public class SignUtil {
 	public Map getDecryptData(String encryptedData,String digestKey,String iv){
@@ -31,6 +32,8 @@ public class SignUtil {
 				map.put("status", "0");
 				map.put("msg", "解密失败");
 			}
+
+			System.out.println("result:"+map);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
@@ -39,7 +42,8 @@ public class SignUtil {
 
 	public static byte[] decrypt(byte[] content, byte[] keyByte, byte[] ivByte) {
 		try {
-			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS7Padding");
+			Security.addProvider(new BouncyCastleProvider());
+			Cipher cipher = Cipher.getInstance("AES/CBC/PKCS7Padding","BC");
 			Key sKeySpec = new SecretKeySpec(keyByte, "AES");
 
 			cipher.init(Cipher.DECRYPT_MODE, sKeySpec, generateIV(ivByte));// 初始化
